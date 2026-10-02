@@ -1,0 +1,17 @@
+/* Novo layout para os cards: imagem, ícone de contexto e ação em camadas. */
+:root { --signal:#00a995; }
+.catalog-image > b { display:none; }
+.catalog-card { display:flex; flex-direction:column; }
+.catalog-image { height:242px; background:#d4e4df; }
+.catalog-card:nth-child(3n+2) .catalog-image { background:#c8e8e0; }.catalog-card:nth-child(3n) .catalog-image { background:#c9dce7; }
+.catalog-copy { flex:1; min-height:196px; padding:17px 18px 16px; }
+.catalog-meta { display:flex; align-items:center; gap:9px; margin-bottom:11px; }
+.catalog-copy .catalog-meta p { margin:0; }
+.catalog-icon { width:29px; height:29px; display:grid; place-items:center; color:var(--signal); border:1px solid rgba(248,248,246,.24); background:rgba(248,248,246,.06); }
+.catalog-copy h3 { font-size:16px; line-height:1.32; }
+.catalog-bottom { width:100%; display:flex; align-items:flex-end; justify-content:space-between; gap:12px; margin-top:auto; }
+.catalog-copy small { margin:0; max-width:120px; }
+.catalog-link { display:flex; gap:7px; align-items:center; white-space:nowrap; }
+.catalog .catalog-icon { border-color:var(--line); background:white; }.catalog .catalog-copy h3 { color:var(--ink); }
+.catalog .catalog-image { background:#d4e4df; }.catalog .catalog-card:nth-child(3n+2) .catalog-image { background:#c8e8e0; }.catalog .catalog-card:nth-child(3n) .catalog-image { background:#c9dce7; }
+@media (max-width:800px) { .catalog-image { height:164px; }.catalog-copy { min-height:214px; padding:12px; }.catalog-icon { width:25px; height:25px; }.catalog-copy h3 { font-size:13px; }.catalog-bottom { display:block; }.catalog-link { display:inline-flex; margin-top:14px; }.catalog-copy small { font-size:10px; } }

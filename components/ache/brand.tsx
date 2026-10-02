@@ -1,0 +1,2 @@
+export function Mark() { return <svg className="mark" viewBox="0 0 72 72" aria-hidden="true"><path d="M14 57 35.8 13 58 57H48.4L35.8 31.2 27.1 48.7h18.1" fill="none" stroke="currentColor" strokeWidth="7" strokeLinecap="square" strokeLinejoin="miter" /><path d="M48 49h11v11H48z" fill="currentColor" /></svg>; }
+export function Brand() { return <div className="brand"><Mark /><span>ACHE <i>AQUI</i></span></div>; }
